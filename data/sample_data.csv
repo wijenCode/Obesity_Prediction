@@ -1,0 +1,11 @@
+Gender,Age,Height,Weight,family_history_of_overweight,FAVC,FCVC,NCP,CAEC,SMOKE,CH2O,SCC,FAF,TUE,CALC,MTRANS
+Male,24,1.70,80.0,yes,yes,2.0,3.0,Sometimes,no,2.0,no,1.0,1.0,Sometimes,Public_Transportation
+Female,21,1.62,55.0,no,no,3.0,3.0,Sometimes,no,3.0,yes,2.0,0.0,no,Walking
+Male,35,1.80,95.0,yes,yes,1.0,2.0,Frequently,yes,1.5,no,0.0,2.0,Frequently,Automobile
+Female,45,1.55,49.0,no,no,3.0,4.0,no,no,3.0,yes,2.5,0.2,no,Public_Transportation
+Male,37,1.78,130.0,yes,yes,1.0,3.0,Always,no,1.0,no,0.5,1.0,Frequently,Automobile
+Female,29,1.68,75.0,yes,yes,2.0,3.0,Sometimes,no,2.0,no,1.0,1.0,Sometimes,Public_Transportation
+Male,19,1.75,65.0,no,no,3.0,3.0,no,no,3.0,yes,3.0,0.5,no,Bike
+Female,42,1.60,90.0,yes,yes,1.0,2.0,Frequently,no,1.0,no,0.0,1.5,Sometimes,Automobile
+Male,32,1.82,88.0,yes,yes,2.0,3.0,Sometimes,yes,2.0,no,1.0,1.0,Frequently,Motorbike
+Female,27,1.65,58.0,no,no,3.0,3.0,no,no,2.5,yes,2.0,0.7,no,Walking

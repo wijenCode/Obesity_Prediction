@@ -1,0 +1,77 @@
+/* Custom styles for Obesity Prediction System */
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.jumbotron {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: #4a6fdc;
+    color: white;
+    border-radius: 10px 10px 0 0 !important;
+    padding: 1.5rem;
+}
+
+.btn-primary {
+    background-color: #4a6fdc;
+    border-color: #4a6fdc;
+}
+
+.btn-primary:hover {
+    background-color: #3456b4;
+    border-color: #3456b4;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: #4a6fdc;
+    box-shadow: 0 0 0 0.2rem rgba(74, 111, 220, 0.25);
+}
+
+h4 {
+    color: #4a6fdc;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+label {
+    font-weight: 500;
+    color: #495057;
+}
+
+.alert {
+    border-radius: 10px;
+}
+
+table.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(74, 111, 220, 0.05);
+}
+
+.card-body h2 {
+    color: #4a6fdc;
+}

@@ -1,0 +1,4 @@
+Gender,Age,Height,Weight,family_history_of_overweight,FAVC,FCVC,NCP,CAEC,SMOKE,CH2O,SCC,FAF,TUE,CALC,MTRANS
+Female,21,1.62,64,yes,no,2,3,Sometimes,no,2,no,2,1,Sometimes,Public_Transportation
+Male,24,1.8,77,yes,yes,2,3,Sometimes,no,2,no,1,0,Sometimes,Public_Transportation
+Female,25,1.6,59,yes,no,3,3,Sometimes,no,2,no,3,1,Sometimes,Public_Transportation
