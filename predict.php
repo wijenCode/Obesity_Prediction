@@ -107,19 +107,6 @@ unset($_SESSION['form_data']);
                     </div>
                 <?php endif; ?>
                 
-                <div class="alert alert-primary mt-4">
-                    <h5>Obesity Categories Explanation:</h5>
-                    <ul>
-                        <li><strong>Insufficient Weight</strong>: BMI less than 18.5</li>
-                        <li><strong>Normal Weight</strong>: BMI between 18.5 and 24.9</li>
-                        <li><strong>Overweight Level I</strong>: BMI between 25 and 27.5</li>
-                        <li><strong>Overweight Level II</strong>: BMI between 27.5 and 29.9</li>
-                        <li><strong>Obesity Type I</strong>: BMI between 30 and 34.9</li>
-                        <li><strong>Obesity Type II</strong>: BMI between 35 and 39.9</li>
-                        <li><strong>Obesity Type III</strong>: BMI 40 or higher</li>
-                    </ul>
-                </div>
-                
                 <div class="text-center mt-4">
                     <a href="index.php" class="btn btn-primary btn-lg">Back to Home</a>
                     <?php if ($prediction_type === 'manual'): ?>

@@ -38,7 +38,7 @@
                             </div>
                             
                             <div class="form-group">
-                                <label for="Height">Height (meters)</label>
+                                <label for="Height">Height (meters ex: 1,75)</label>
                                 <input type="number" class="form-control" id="Height" name="Height" min="0.5" max="2.5" step="0.01" required>
                             </div>
                             
