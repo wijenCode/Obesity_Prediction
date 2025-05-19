@@ -119,4 +119,15 @@ document.addEventListener('DOMContentLoaded', function() {
             container.prepend(alertDiv);
         }
     }
+
+    let currentPage = window.location.pathname.split("/").pop();
+
+    // Set the active class based on the current page
+    if (currentPage === "index.html") {
+        document.getElementById("home").classList.add("bg-blue-600", "text-white");
+    } else if (currentPage === "data_visualisation.html") {
+        document.getElementById("visualisation").classList.add("bg-blue-600", "text-white");
+    } else if (currentPage === "prediction.html") {
+        document.getElementById("prediction").classList.add("bg-blue-600", "text-white");
+    }
 });

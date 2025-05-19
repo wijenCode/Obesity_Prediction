@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +30,7 @@
                             </div>
                             
                             <div class="form-group">
-                                <label for="Age">Age</label>
+                                <label for="Age">Age (1-100 tahun)</label>
                                 <input type="number" class="form-control" id="Age" name="Age" min="0" max="100" step="1" required>
                             </div>
                             
@@ -43,7 +40,7 @@
                             </div>
                             
                             <div class="form-group">
-                                <label for="Weight">Weight (kg)</label>
+                                <label for="Weight">Weight (kg) (Min: 20Kg, Maks: 300Kg)</label>
                                 <input type="number" class="form-control" id="Weight" name="Weight" min="20" max="300" step="0.1" required>
                             </div>
                             
@@ -157,6 +154,16 @@
                                 </select>
                             </div>
                         </div>
+                    </div>
+                    
+                    <div class="form-group mt-4">
+                        <label for="model"><strong>Select Prediction Model:</strong></label>
+                        <select class="form-control" id="model" name="model" required>
+                            <option value="SVM">Support Vector Machine (SVM)</option>
+                            <option value="KNN">K-Nearest Neighbors (KNN)</option>
+                            <option value="DT">Decision Tree</option>
+                            <option value="NN">Neural Network</option>
+                        </select>
                     </div>
                     
                     <div class="form-group mt-4 text-center">

@@ -1,12 +1,47 @@
-/* Custom styles for Obesity Prediction System */
+/* Dark Mode Styles for Obesity Prediction System */
 
 body {
-    background-color: #f8f9fa;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d1017; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 70px; /* Adjust based on navbar height */
+}
+
+/* Floating Navbar Effect */
+.navbar {
+    position: sticky-top; /* Not fixed at the top */
+    justify-content: center;
+    background-color: #333; /* Dark background */
+    transition: all 0.3s ease;
+    z-index: 1030; /* Ensure it stays above other content */
+    margin-left: 48px;
+    margin-right: 48px;
+    border-radius: 20px;
+}
+
+/* Navbar links */
+.navbar-nav .nav-item {
+    margin-left: 15px; /* Space between items */
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #4a6fdc !important; /* Highlight on hover */
+}
+
+/* Active link styling */
+.nav-item.active .nav-link {
+    color: #4a6fdc !important;
+    background-color: #222 !important; /* Dark background for active items */
 }
 
 .jumbotron {
-    background-color: #ffffff;
+    background-color: #0d1017; /* Dark background for jumbotron */
     border-radius: 10px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     padding: 2rem;
@@ -15,17 +50,19 @@ body {
 .card {
     border: none;
     border-radius: 10px;
-    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
+    background-color: #333333; /* Dark background for cards */
+    color: #e0e0e0; /* Light text for cards */
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 }
 
 .card-header {
-    background-color: #4a6fdc;
+    background-color: #4a6fdc; /* Accent color for card header */
     color: white;
     border-radius: 10px 10px 0 0 !important;
     padding: 1.5rem;
@@ -42,8 +79,10 @@ body {
 }
 
 .form-control {
+    background-color: #2c2c2c; /* Dark input field */
+    color: #e0e0e0; /* Light text for input */
     border-radius: 5px;
-    border: 1px solid #ced4da;
+    border: 1px solid #555555;
     padding: 10px;
 }
 
@@ -52,8 +91,15 @@ body {
     box-shadow: 0 0 0 0.2rem rgba(74, 111, 220, 0.25);
 }
 
+h1 {
+    color: #ffffff; /* Accent color for headings */
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+
 h4 {
-    color: #4a6fdc;
+    color: #ffffff; /* Accent color for headings */
     margin-top: 20px;
     margin-bottom: 15px;
     font-weight: 600;
@@ -61,17 +107,46 @@ h4 {
 
 label {
     font-weight: 500;
-    color: #495057;
+    color: #e0e0e0; /* Light text for labels */
 }
 
 .alert {
     border-radius: 10px;
+    color: #ffffff;
+    background-color: #f44336; /* Red alert color */
 }
 
 table.table-striped tbody tr:nth-of-type(odd) {
-    background-color: rgba(74, 111, 220, 0.05);
+    background-color: rgba(74, 111, 220, 0.1); /* Dark stripes for table */
+}
+
+table {
+    color: #e0e0e0;
+}
+
+.table th {
+    color: white;
+}
+
+.table td {
+    color: white;
 }
 
 .card-body h2 {
     color: #4a6fdc;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+a {
+    color: #4a6fdc; /* Link color */
+}
+
+a:hover {
+    color: #3456b4; /* Link hover effect */
 }

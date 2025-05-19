@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 import pandas as pd
 import numpy as np
 import joblib
@@ -11,6 +10,8 @@ def main():
     # Parse command line arguments
     parser = argparse.ArgumentParser(description='Make obesity predictions from CSV data')
     parser.add_argument('--csv', required=True, help='Path to CSV file with feature data')
+    parser.add_argument('--model', required=True, choices=['SVM', 'KNN', 'DT', 'NN'], 
+                        help='Model to use for prediction (SVM, KNN, DT, NN)')
     args = parser.parse_args()
 
     # Check if the file exists
@@ -19,12 +20,25 @@ def main():
         sys.exit(1)
 
     try:
+        # Determine the model file based on the selected model
+        model_filename_map = {
+            'SVM': 'obesity_pipeline_SVM.sav',
+            'KNN': 'obesity_pipeline_KNN.sav',
+            'DT': 'obesity_pipeline_DT.sav',
+            'NN': 'obesity_pipeline_NN.sav'
+        }
+        
+        model_filename = model_filename_map.get(args.model)
+        if not model_filename:
+            print(json.dumps([f"Error: Invalid model selection: {args.model}"]))
+            sys.exit(1)
+        
         # Load the model
         model_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 
-                                 'models', 'obesity_pipeline_SVM.sav')
+                                 'models', model_filename)
         
         if not os.path.exists(model_path):
-            print(json.dumps(["Error: Model file not found"]))
+            print(json.dumps([f"Error: Model file not found: {model_filename}"]))
             sys.exit(1)
             
         pipeline = joblib.load(model_path)
@@ -85,7 +99,7 @@ def main():
         for col in numeric_cols:
             if col in df.columns:
                 try:
-                    # Jika kolom adalah 'Age', biarkan dalam format int
+                    # If column is 'Age', keep it as int
                     if col == 'Age':
                         df[col] = df[col].astype(int)
                     else:
