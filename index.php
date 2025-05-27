@@ -79,7 +79,10 @@
                     </tbody>
                 </table>
             </div>
-            <p class="pt-8">Download the dataset from <a href="https://www.kaggle.com/datasets/ruchikakumbhar/obesity-prediction/data" target="_blank" class="text-blue-400 hover:underline">https://www.kaggle.com/datasets/ruchikakumbhar/obesity-prediction/data</a>.</p>
+            <p class="pt-8">
+                Dataset ini diambil dari <a href="https://www.kaggle.com/datasets/ruchikakumbhar/obesity-prediction/data" target="_blank" class="text-blue-500 hover:underline">Kaggle</a>, dan disediakan oleh <strong>Ruchika Kumbhar</strong>.  
+            </p>
+
 
             <div class="pt-12">
                 <h2 class="text-2xl font-semibold text-blue-400 mb-4">Features</h2>
